@@ -5,13 +5,20 @@
         </title>
     </head>
     <body bgcolor="#5cd3df">
+        
+        
+        <!--Header section-->
+        <header>
         <h1 align="center"><span>Hello There</span></h1>
         <p><strong>General KENOBI</strong>. This is a quick resume of basic HTML</p>
         <p>The About Me header has been written using the h1 element. You can use h1 to h6 for different sizes. <ins>It's not used for bold text.</ins><br/>
             The 'br/' has been used here for separating the sentences. <br/>
             The tab name is made in the html head title element</p>
         <hr/> <!--horizontal line-->
+        </header>
+        
 
+        <!--Info on text formatting section-->
         <h2 align="center">Here are the available text formatting;</h2>
         <p><b>Bold text 'b' element</b></p>
         <p><i>Italic text 'i' element</i></p>
@@ -19,7 +26,21 @@
         <p><small>Small text 'small' element</small></p>
         <p><strong>Strong</strong><sub> subscripted</sub><sup> superscripted</sup><ins> Inserted</ins><del> and deleted text</del> 'strong', 'sub', 'sup', 'ins' and 'del' elements</p>
         <p>Notice that bold and strong are the same on an HTML page, but different for other uses. Strong is for emphasis and Bold is for style.</p>
-        
+        <hr/><br/>
+
+
+        <!--Audio section-->
+        <center>
+        <h4>Would you like to listen to some music my good sir</h4>    
+        <audio src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" controls autoplay loop>
+            Audio element not supported by your browser
+        </audio></center>
+        <!-- CAN ALSO BE
+        <audio controls>
+            <source src="" type="audio/ogg(or mp3)"    
+        </audio>
+        -->
+
 
         <!--Image section-->
         <h2 align="center">Here is an image</h2>
@@ -104,7 +125,15 @@
         <!--My Media section-->
         <div class="section">
             <h2 align="center"><span>My Media</span></h2>
-            <center><iframe height="150" width="300" src="https://www.youtube.com/embed/Q6_5InVJZ88" allowfullscreen frameborder="0"></iframe></center>
+            <center><iframe height="150" width="300" src="https://www.youtube.com/embed/Q6_5InVJZ88" allowfullscreen frameborder="0"></iframe>
+        <!--HTML5 part-->
+            <video controls height="150" width="300">
+                <source src="http://www.sololearn.com/uploads/video.mp4" type="video/mp4">
+                <source src="http://www.sololearn.com/uploads/video.ogg" type="video/ogg">
+                Video is not supported by your browser
+        <!-- If the browser does not support the first video type, it will try the next one.-->
+            </video>
+            </center>
         </div>
 
 
